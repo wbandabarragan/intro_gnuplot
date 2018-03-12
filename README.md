@@ -1,1 +1,2 @@
-# intro_gnuplot
+# Introducción a gnuplot
+# Wladimir E. Banda Barragán
