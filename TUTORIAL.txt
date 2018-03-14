@@ -1,0 +1,42 @@
+# TUTORIAL DE GNUPLOT
+
+Escribir tres scripts que generen imágenes png y eps, como se detalla a continuación.
+
+¡Es importante comentar su código!
+
+
+SCRIPT 1: (FORMATO PNG)
+Generar una imagen de la superficie definida por:
+
+z = sin (sqrt (x^2 + y^2)) / (sqrt (x^2 + y^2))
+
+Personalizar al gusto.
+
+
+SCRIPT 2: (FORMATO PNG)
+Generar una imagen personalizada de los datos en el archivo: ejemplo_datos_0.dat que compare las columnas 5, 6, y 7 como una función del tiempo en la primera columna.
+
+
+SCRIPT 3: (FORMATO EPS)
+Generar una imagen personalizada de los datos en el archivo: ejemplo_datos_6.csv que compare las columnas 2, 3, y 4 como una función del tiempo en la primera columna.
+
+
+Para abrir un archivo .csv en gnuplot, debemos indicar que los datos están separados por comas:
+
+set datafile separator ","
+
+
+Para utilizar líneas entrecortadas, se puede usar la siguiente definición:
+
+set terminal postscript eps enhanced color dashed dashlength 2.8 linewidth 2
+
+Para luego controlar las líneas con "linetype <número>
+
+
+
+Por favor enviar los tres scripts y las tres imágenes de salida en una sola carpeta comprimida hasta el final del día 14-03-2018 al correo:
+
+we.banda@uta.edu.ec
+
+
+
