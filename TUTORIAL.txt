@@ -20,15 +20,20 @@ Generar una imagen personalizada de los datos en el archivo: ejemplo_datos_0.dat
 SCRIPT 3: (FORMATO EPS)
 Generar una imagen personalizada de los datos en el archivo: ejemplo_datos_6.csv que compare las columnas 2, 3, y 4 como una función del tiempo en la primera columna.
 
+NOTAS PARA EL SCRIPT 3:
 
-Para abrir un archivo .csv en gnuplot, debemos indicar que los datos están separados por comas:
+
+3.a) Para abrir un archivo .csv en gnuplot, debemos indicar que los datos están separados por comas:
 
 set datafile separator ","
 
 
-Para utilizar líneas entrecortadas, se puede usar la siguiente definición:
+3.b) Para controlar el tamaño de la imagen, pueden declarar el tamaño con size en la terminal.
 
-set terminal postscript eps enhanced color dashed dashlength 2.8 linewidth 2
+
+3.c) Para utilizar líneas entrecortadas, se puede usar la siguiente definición:
+
+set terminal postscript eps size 80,70 enhanced color dashed dashlength 2.8 linewidth 2
 
 Para luego controlar las líneas con "linetype <número>
 
