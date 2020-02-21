@@ -1,0 +1,10 @@
+set term png
+
+set output "nube.png"
+
+set xrange[0:256]
+set yrange[0:256]
+
+#Usamos "with image" para que los datos se proyecten en 2D
+
+plot "nube_k01_s19.dbl" binary array=256x256 format='%double' with image notitle
